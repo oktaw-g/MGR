@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD64A8792DB2AB000067E584 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD64A8782DB2AB000067E584 /* README.md */; };
+		DD64A88D2DB2E9D80067E584 /* ZeroShotClassifierV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */; };
+		DD64A88F2DB2F13F0067E584 /* TrainerV4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDCB3B572DB2562C00D44D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDCB3B3D2DB2562B00D44D48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDCB3B442DB2562B00D44D48;
+			remoteInfo = CoreML_Classifier;
+		};
+		DDCB3B612DB2562C00D44D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDCB3B3D2DB2562B00D44D48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDCB3B442DB2562B00D44D48;
+			remoteInfo = CoreML_Classifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD64A8782DB2AB000067E584 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroShotClassifierV3.swift; sourceTree = "<group>"; };
+		DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerV4.swift; sourceTree = "<group>"; };
+		DDCB3B452DB2562B00D44D48 /* CoreML_Classifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_Classifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCB3B562DB2562C00D44D48 /* CoreML_ClassifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_ClassifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCB3B602DB2562C00D44D48 /* CoreML_ClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_ClassifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DDCB3B472DB2562B00D44D48 /* CoreML_Classifier */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreML_Classifier;
+			sourceTree = "<group>";
+		};
+		DDCB3B592DB2562C00D44D48 /* CoreML_ClassifierTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreML_ClassifierTests;
+			sourceTree = "<group>";
+		};
+		DDCB3B632DB2562C00D44D48 /* CoreML_ClassifierUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreML_ClassifierUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDCB3B422DB2562B00D44D48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B532DB2562C00D44D48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B5D2DB2562C00D44D48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDCB3B3C2DB2562B00D44D48 = {
+			isa = PBXGroup;
+			children = (
+				DD64A8782DB2AB000067E584 /* README.md */,
+				DDCB3D872DB2587600D44D48 /* Scripts */,
+				DDCB3B472DB2562B00D44D48 /* CoreML_Classifier */,
+				DDCB3B592DB2562C00D44D48 /* CoreML_ClassifierTests */,
+				DDCB3B632DB2562C00D44D48 /* CoreML_ClassifierUITests */,
+				DDCB3B462DB2562B00D44D48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDCB3B462DB2562B00D44D48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB3B452DB2562B00D44D48 /* CoreML_Classifier.app */,
+				DDCB3B562DB2562C00D44D48 /* CoreML_ClassifierTests.xctest */,
+				DDCB3B602DB2562C00D44D48 /* CoreML_ClassifierUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDCB3D872DB2587600D44D48 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */,
+				DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDCB3B442DB2562B00D44D48 /* CoreML_Classifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCB3B6A2DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_Classifier" */;
+			buildPhases = (
+				DDCB3B412DB2562B00D44D48 /* Sources */,
+				DDCB3B422DB2562B00D44D48 /* Frameworks */,
+				DDCB3B432DB2562B00D44D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DDCB3B472DB2562B00D44D48 /* CoreML_Classifier */,
+			);
+			name = CoreML_Classifier;
+			packageProductDependencies = (
+			);
+			productName = CoreML_Classifier;
+			productReference = DDCB3B452DB2562B00D44D48 /* CoreML_Classifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDCB3B552DB2562C00D44D48 /* CoreML_ClassifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCB3B6D2DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_ClassifierTests" */;
+			buildPhases = (
+				DDCB3B522DB2562C00D44D48 /* Sources */,
+				DDCB3B532DB2562C00D44D48 /* Frameworks */,
+				DDCB3B542DB2562C00D44D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDCB3B582DB2562C00D44D48 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DDCB3B592DB2562C00D44D48 /* CoreML_ClassifierTests */,
+			);
+			name = CoreML_ClassifierTests;
+			packageProductDependencies = (
+			);
+			productName = CoreML_ClassifierTests;
+			productReference = DDCB3B562DB2562C00D44D48 /* CoreML_ClassifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDCB3B5F2DB2562C00D44D48 /* CoreML_ClassifierUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCB3B702DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_ClassifierUITests" */;
+			buildPhases = (
+				DDCB3B5C2DB2562C00D44D48 /* Sources */,
+				DDCB3B5D2DB2562C00D44D48 /* Frameworks */,
+				DDCB3B5E2DB2562C00D44D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDCB3B622DB2562C00D44D48 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DDCB3B632DB2562C00D44D48 /* CoreML_ClassifierUITests */,
+			);
+			name = CoreML_ClassifierUITests;
+			packageProductDependencies = (
+			);
+			productName = CoreML_ClassifierUITests;
+			productReference = DDCB3B602DB2562C00D44D48 /* CoreML_ClassifierUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDCB3B3D2DB2562B00D44D48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					DDCB3B442DB2562B00D44D48 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					DDCB3B552DB2562C00D44D48 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = DDCB3B442DB2562B00D44D48;
+					};
+					DDCB3B5F2DB2562C00D44D48 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = DDCB3B442DB2562B00D44D48;
+					};
+				};
+			};
+			buildConfigurationList = DDCB3B402DB2562B00D44D48 /* Build configuration list for PBXProject "CoreML_Classifier" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDCB3B3C2DB2562B00D44D48;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DDCB3B462DB2562B00D44D48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDCB3B442DB2562B00D44D48 /* CoreML_Classifier */,
+				DDCB3B552DB2562C00D44D48 /* CoreML_ClassifierTests */,
+				DDCB3B5F2DB2562C00D44D48 /* CoreML_ClassifierUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDCB3B432DB2562B00D44D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD64A8792DB2AB000067E584 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B542DB2562C00D44D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B5E2DB2562C00D44D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDCB3B412DB2562B00D44D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD64A88D2DB2E9D80067E584 /* ZeroShotClassifierV3.swift in Sources */,
+				DD64A88F2DB2F13F0067E584 /* TrainerV4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B522DB2562C00D44D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCB3B5C2DB2562C00D44D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDCB3B582DB2562C00D44D48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDCB3B442DB2562B00D44D48 /* CoreML_Classifier */;
+			targetProxy = DDCB3B572DB2562C00D44D48 /* PBXContainerItemProxy */;
+		};
+		DDCB3B622DB2562C00D44D48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDCB3B442DB2562B00D44D48 /* CoreML_Classifier */;
+			targetProxy = DDCB3B612DB2562C00D44D48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDCB3B682DB2562C00D44D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDCB3B692DB2562C00D44D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DDCB3B6B2DB2562C00D44D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreML_Classifier/CoreML_Classifier.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreML_Classifier/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-Classifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDCB3B6C2DB2562C00D44D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreML_Classifier/CoreML_Classifier.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreML_Classifier/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-Classifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DDCB3B6E2DB2562C00D44D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-ClassifierTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_Classifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreML_Classifier";
+			};
+			name = Debug;
+		};
+		DDCB3B6F2DB2562C00D44D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-ClassifierTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_Classifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreML_Classifier";
+			};
+			name = Release;
+		};
+		DDCB3B712DB2562C00D44D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-ClassifierUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CoreML_Classifier;
+			};
+			name = Debug;
+		};
+		DDCB3B722DB2562C00D44D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PWr.CoreML-ClassifierUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CoreML_Classifier;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDCB3B402DB2562B00D44D48 /* Build configuration list for PBXProject "CoreML_Classifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCB3B682DB2562C00D44D48 /* Debug */,
+				DDCB3B692DB2562C00D44D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCB3B6A2DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_Classifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCB3B6B2DB2562C00D44D48 /* Debug */,
+				DDCB3B6C2DB2562C00D44D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCB3B6D2DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_ClassifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCB3B6E2DB2562C00D44D48 /* Debug */,
+				DDCB3B6F2DB2562C00D44D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCB3B702DB2562C00D44D48 /* Build configuration list for PBXNativeTarget "CoreML_ClassifierUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCB3B712DB2562C00D44D48 /* Debug */,
+				DDCB3B722DB2562C00D44D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDCB3B3D2DB2562B00D44D48 /* Project object */;
+}
