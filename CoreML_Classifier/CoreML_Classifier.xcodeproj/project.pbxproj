@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2F89722DD637000070D30B /* TrainerV5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F89712DD636FA0070D30B /* TrainerV5.swift */; };
 		DD64A8792DB2AB000067E584 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD64A8782DB2AB000067E584 /* README.md */; };
 		DD64A88D2DB2E9D80067E584 /* ZeroShotClassifierV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */; };
-		DD64A88F2DB2F13F0067E584 /* TrainerV4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2F89712DD636FA0070D30B /* TrainerV5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerV5.swift; sourceTree = "<group>"; };
 		DD64A8782DB2AB000067E584 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroShotClassifierV3.swift; sourceTree = "<group>"; };
-		DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerV4.swift; sourceTree = "<group>"; };
 		DDCB3B452DB2562B00D44D48 /* CoreML_Classifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_Classifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB3B562DB2562C00D44D48 /* CoreML_ClassifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_ClassifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB3B602DB2562C00D44D48 /* CoreML_ClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_ClassifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 		DDCB3D872DB2587600D44D48 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				DD64A88E2DB2F12D0067E584 /* TrainerV4.swift */,
+				DD2F89712DD636FA0070D30B /* TrainerV5.swift */,
 				DD64A88A2DB2CFCF0067E584 /* ZeroShotClassifierV3.swift */,
 			);
 			path = Scripts;
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD64A88D2DB2E9D80067E584 /* ZeroShotClassifierV3.swift in Sources */,
-				DD64A88F2DB2F13F0067E584 /* TrainerV4.swift in Sources */,
+				DD2F89722DD637000070D30B /* TrainerV5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

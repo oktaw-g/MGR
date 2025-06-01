@@ -1,8 +1,8 @@
 //
-//  ZeroShotClassifierV3.swift
+//  Untitled.swift
 //  CoreML_Classifier
 //
-//  Created by Oktawian Głowacz on 18/04/2025.
+//  Created by Oktawian Głowacz on 15/05/2025.
 //
 
 import Foundation
@@ -163,30 +163,4 @@ struct ZeroShotClassifier {
         let count = Double(labels.count)
         return Metrics(accuracy: accuracy, precision: precision / count, recall: recall / count, f1Score: f1 / count)
     }
-    static func buildConfusionMatrix(groundTruths: [String], predictions: [String], classLabels: [String]) -> [[Int]] {
-        var labelIndex = [String: Int]()
-        for (i, label) in classLabels.enumerated() {
-            labelIndex[label] = i
-        }
-
-        var matrix = Array(repeating: Array(repeating: 0, count: classLabels.count), count: classLabels.count)
-
-        for (gt, pred) in zip(groundTruths, predictions) {
-            if let gtIdx = labelIndex[gt], let predIdx = labelIndex[pred] {
-                matrix[gtIdx][predIdx] += 1
-            }
-        }
-
-        return matrix
-    }
-
-    static func saveConfusionMatrix(matrix: [[Int]], classLabels: [String], outputURL: URL) {
-        var csv = "," + classLabels.joined(separator: ",") + "\n"
-        for (i, row) in matrix.enumerated() {
-            let line = [classLabels[i]] + row.map { String($0) }
-            csv += line.joined(separator: ",") + "\n"
-        }
-        try? csv.write(to: outputURL, atomically: true, encoding: .utf8)
-    }
-
 }

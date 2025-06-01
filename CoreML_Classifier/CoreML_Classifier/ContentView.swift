@@ -11,7 +11,8 @@ struct ContentView: View {
     @State private var selectedModelURL: URL?
     @State private var selectedDatasetURL: URL?
     @State private var selectedOutputFolderURL: URL?
-    
+    @State private var selectedZeroShotDatasetURL: URL?
+
     @State private var batchSize: Int = 8
 
     var body: some View {
@@ -35,6 +36,15 @@ struct ContentView: View {
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
+                Button("Select Zero-Shot Dataset Folder") {
+                    selectZeroShotDataset()
+                }
+                if let zeroShotDataset = selectedZeroShotDatasetURL {
+                    Text("Zero-Shot Dataset: \(zeroShotDataset.lastPathComponent)")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+
                 
                 Button("Select Output Folder") {
                     selectOutputFolder()
@@ -113,7 +123,19 @@ struct ContentView: View {
             selectedDatasetURL = panel.url
         }
     }
+    func selectZeroShotDataset() {
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        panel.allowsMultipleSelection = false
+        panel.title = "Select Zero-Shot Dataset Folder"
 
+        if panel.runModal() == .OK {
+            selectedZeroShotDatasetURL = panel.url
+        }
+    }
+
+    
     func selectOutputFolder() {
         let panel = NSOpenPanel()
         panel.canChooseFiles = false
@@ -134,7 +156,7 @@ struct ContentView: View {
 
     func runZeroShot() {
         guard let modelURL = selectedModelURL,
-              let datasetURL = selectedDatasetURL,
+              let datasetURL = selectedZeroShotDatasetURL,
               let outputURL = selectedOutputFolderURL else {
             print("❌ Missing selections")
             return
@@ -153,7 +175,7 @@ struct ContentView: View {
             print("❌ Missing selections")
             return
         }
-        Trainer.train(baseModelURL: modelURL, datasetURL: datasetURL, outputFolderURL: outputURL, batchSize: batchSize)
+        Trainer.train(baseModelURL: modelURL, datasetURL: datasetURL, outputFolder: outputURL)
     }
 
     func runZeroShotAndTrain() {
